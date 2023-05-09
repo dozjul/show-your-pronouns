@@ -447,3 +447,4 @@ Temporary Items
 *.js.map
 .lh/*
 */dist/
+*/package-lock.json
