@@ -7,6 +7,8 @@ import { newUser, users } from './UserMng';
 import { PronounsPagePrideFlags } from './PronounsPagePrideFlags';
 import "./style/preferredNames.scss";
 import "./style/emoji.scss";
+import "./style/fonts.scss";
+import "./style/preferredPronouns.scss";
 
 /**
  * This function returns a Promise that resolves to a PronounsUser object with the specified username

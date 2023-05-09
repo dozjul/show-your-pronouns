@@ -1,6 +1,6 @@
 {
     "name": "@rye/pronouns-user-framework",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "description": "User Framework for @rye/show-your-pronouns",
     "main": "dist/pronounsUserFramework.js",
     "types": "types/main.d.ts",

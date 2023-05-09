@@ -29,7 +29,7 @@
         "sass": "^1.62.1",
         "@rye/pronouns-base": "^0.0.6",
         "@rye/pronouns-user-providers": "^0.0.4",
-        "@rye/pronouns-user-framework": "^0.0.10",
+        "@rye/pronouns-user-framework": "^0.0.11",
         "@rye/pronouns-styling": "^0.0.1"
     },
     "devDependencies": {
