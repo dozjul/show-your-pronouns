@@ -1,5 +1,5 @@
 import {Pronouns} from "./Pronouns";
-import {Language} from "./Language";
+import {Language} from "../modules/base/src/Language";
 import {PronounsLookup} from "./PronounsLookup";
 import {sendSnackbar} from "./misc/Snackbar";
 

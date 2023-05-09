@@ -10,7 +10,7 @@ module.exports = {
   target: ['node'],
   devtool: 'inline-source-map',
   output: {
-    filename: 'pronounsProviders.js',
+    filename: 'pronounsUserProvider.js',
     library: "pronounsProvider",
     libraryTarget: "umd",
     path: path.resolve(__dirname, 'dist'),

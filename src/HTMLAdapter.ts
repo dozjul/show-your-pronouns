@@ -1,6 +1,7 @@
-import { PronounsUser } from './PronounsUser';
-import { Language } from './Language';
-import { PronounsProvider } from './PronounsProvider';
+import { PronounsUser } from '@rye/pronouns-user-framework';
+import { Language } from '@rye/pronouns-base';
+// @ts-ignore
+import { PronounsProvider } from '@rye/pronouns-user-providers';
 import { getPronounsBadge } from './PronounsBadge-HTMLAdapter';
 import { newUser, users } from './UserMng';
 import { PronounsPagePrideFlags } from './PronounsPagePrideFlags';

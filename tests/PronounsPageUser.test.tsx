@@ -1,8 +1,8 @@
-import {PronounsPageUser} from "../src/PronounsPageUser";
+import {PronounsPageUser} from "../modules/providers/src/PronounsPageUser";
 import {Language} from "../src";
-import {PronounsUser} from "../src/PronounsUser";
+import {PronounsUser} from "../modules/pronounsUserFramework/src/PronounsUser";
 import {expect, jest, test} from '@jest/globals';
-import {UserNotFoundError} from "../src/Errors/UserNotFoundError";
+import {UserNotFoundError} from "../modules/base/src/Errors/UserNotFoundError";
 import * as assert from "assert";
 
 const { JSDOM } = require('jsdom');

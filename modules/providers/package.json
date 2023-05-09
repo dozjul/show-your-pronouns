@@ -1,8 +1,8 @@
 {
-    "name": "@rye/pronouns-user-framework",
-    "version": "0.0.10",
-    "description": "User Framework for @rye/show-your-pronouns",
-    "main": "dist/pronounsUserFramework.js",
+    "name": "@rye/pronouns-user-providers",
+    "version": "0.0.4",
+    "description": "Pronouns.Page JS API",
+    "main": "dist/pronounsUserProvider.js",
     "types": "types/main.d.ts",
     "scripts": {
         "build": "webpack --mode production --config webpack.node.config.js",
@@ -23,21 +23,26 @@
     "license": "HL3-FULL",
     "dependencies": {
         "express": "^4.17.2",
+        "node-fetch": "^2.6.9",
         "react": "^17.0.1",
         "sass": "^1.62.1",
-        "@rye/pronouns-base": "^0.0.6",
-        "@rye/pronouns-styling": "^0.0.1"
+        "@rye/pronouns-user-framework": "^0.0.10",
+        "@rye/pronouns-base": "^0.0.6"
     },
     "devDependencies": {
         "@babel/core": "^7.13.15",
         "@babel/preset-env": "^7.13.15",
         "@babel/preset-typescript": "^7.21.4",
         "babel-loader": "^8.2.3",
+        "css-loader": "^6.7.3",
+        "jest": "^27.5.1",
         "style-loader": "^3.3.2",
         "ts-loader": "^9.4.2",
+        "postcss-loader": "^7.2.4",
         "typescript": "^5.0.4",
         "webpack": "^5.77.0",
-        "webpack-cli": "^5.1.1"
+        "webpack-cli": "^5.1.1",
+        "sass-loader": "^13.2.2"
     },
     "publishConfig": {
         "registry": "https://git.thejulian.uk/api/packages/julian/npm/"

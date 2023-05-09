@@ -1,9 +1,9 @@
 import * as config from "./config";
 import {Pronouns} from "./Pronouns";
-import {Language} from "./Language";
+import {Language} from "../modules/base/src/Language";
 import {PronounsPagePronounsLookupApiResponse} from "./Interfaces/PronounsPagePronounsLookupApiResponse";
 import {PronounsPagePronounsLookupMorphemes} from "./Interfaces/PronounsPagePronounsLookupMorphemes";
-import {LanguageNotYetSupportedError} from "./Errors/LanguageNotYetSupportedError";
+import {LanguageNotYetSupportedError} from "../modules/base/src/Errors/LanguageNotYetSupportedError";
 
 export class PronounsLookup{
     private pronouns:Pronouns;

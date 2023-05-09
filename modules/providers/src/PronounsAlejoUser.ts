@@ -1,5 +1,6 @@
-import { PronounsUser } from "./PronounsUser";
-import {UserNotFoundError} from "./Errors/UserNotFoundError";
+/// <reference types="typescript" />
+import { PronounsUser } from "@rye/pronouns-user-framework";
+import {UserNotFoundError} from "@rye/pronouns-base";
 export class PronounsAlejoUser extends PronounsUser {
     public getNamesList(minimumOpinion:number = 0):Array<string>{
         var retVal:Array<string> = new Array();

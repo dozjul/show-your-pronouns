@@ -4,7 +4,7 @@ import {PronounsLookup} from "../src/PronounsLookup";
 import {Language} from "../src";
 import {PronounsPagePronounsLookupMorphemes} from "../src/Interfaces/PronounsPagePronounsLookupMorphemes";
 import {response} from "express";
-import {LanguageNotYetSupportedError} from "../src/Errors/LanguageNotYetSupportedError";
+import {LanguageNotYetSupportedError} from "../modules/base/src/Errors/LanguageNotYetSupportedError";
 
 const fetch = require('node-fetch');
 

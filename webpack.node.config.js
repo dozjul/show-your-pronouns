@@ -1,5 +1,5 @@
 const path = require('path');
-
+const { ModuleFederationPlugin } = require('webpack').container;
 module.exports = {
   entry: {
     index: {
@@ -18,6 +18,11 @@ module.exports = {
     globalObject: "this",
     umdNamedDefine: true
   },
+  plugins: [
+    new ModuleFederationPlugin({
+      runtime: 'show-your-pronouns',
+    }),
+  ],
   module: {
     rules: [
       {

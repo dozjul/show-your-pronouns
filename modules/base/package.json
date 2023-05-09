@@ -1,6 +1,6 @@
 {
     "name": "@rye/pronouns-base",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "absoulute basics for @rye/show-your-pronouns",
     "main": "dist/pronounsBase.js",
     "types": "types/main.d.ts",

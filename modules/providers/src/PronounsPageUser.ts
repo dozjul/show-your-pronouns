@@ -1,5 +1,6 @@
-import { PronounsUser } from "./PronounsUser";
-import {UserNotFoundError} from "./Errors/UserNotFoundError";
+/// <reference types="typescript" />
+import { PronounsUser } from "@rye/pronouns-user-framework";
+import {UserNotFoundError} from "@rye/pronouns-base";
 
 export class PronounsPageUser extends PronounsUser {
 

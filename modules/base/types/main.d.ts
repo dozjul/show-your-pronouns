@@ -1,14 +1,5 @@
-declare enum Language{
-    en = 'en',
-    de = 'de',
-    es = 'es',
-    fr = 'fr',
-    it = 'it',
-    nl = 'nl',
-    pt = 'pt'
-}
-declare class LanguageNotYetSupportedError extends Error{}
-declare class UserNotFoundError extends Error{}
-declare class NoDataBecauseUserNotFound extends UserNotFoundError{}
+import {Language} from "@rye/pronouns-user-framework";
+import {LanguageNotYetSupportedError} from "../src";
+import {UserNotFoundError, NoDataBecauseUserNotFound} from "../src";
 
 export {UserNotFoundError, Language, LanguageNotYetSupportedError, NoDataBecauseUserNotFound};

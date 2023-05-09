@@ -1,4 +1,4 @@
-import {Language} from "./Language";
+import {Language} from "@rye/pronouns-base";
 
 export class Pronouns{
     private canonicalName:string;

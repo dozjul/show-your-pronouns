@@ -1,4 +1,6 @@
 const path = require('path');
+const { ModuleFederationPlugin } = require('webpack').container;
+const deps = require('./package.json').dependencies;
 
 module.exports = {
   entry: {
@@ -50,6 +52,17 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
+  plugins: [
+    new ModuleFederationPlugin({
+      runtime: 'show-your-pronouns',
+      shared: {
+        pronounsStyling: {
+          requiredVersion: deps["@rye/pronouns-styling"],
+          eager: true,
+        },
+      },
+    }),
+  ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,

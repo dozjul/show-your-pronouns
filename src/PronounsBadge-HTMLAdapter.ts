@@ -1,5 +1,5 @@
 import { PronounsBadge } from "./PronounsBadge";
-import {Language} from "./Language";
+import {Language} from "../modules/base/src/Language";
 export function getPronounsBadge(pronouns:string[], color:string = "orange"):HTMLImageElement{
     var pBadge = new PronounsBadge();
     return pBadge.getPronounsBadge(pronouns, color);
