@@ -446,3 +446,4 @@ Temporary Items
 *.js
 *.js.map
 .lh/*
+*/dist/
