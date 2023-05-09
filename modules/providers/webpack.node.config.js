@@ -10,8 +10,8 @@ module.exports = {
   target: ['node'],
   devtool: 'inline-source-map',
   output: {
-    filename: 'pronounsStyling.js',
-    library: "pronounsStyling",
+    filename: 'pronounsProviders.js',
+    library: "pronounsProvider",
     libraryTarget: "umd",
     path: path.resolve(__dirname, 'dist'),
     clean: true,
@@ -22,7 +22,10 @@ module.exports = {
     new ModuleFederationPlugin({
       runtime: 'show-your-pronouns',
       shared:{
-        pronounsUserFramework:{
+        pronounsUserFramework: {
+          eager: true,
+        },
+        pronounsStyling: {
           eager: true,
         }
       }
@@ -34,6 +37,10 @@ module.exports = {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
+      },
+      {
+        test: /\.ts?$/,
+        exclude: /tests/,
       },
       {
         test: /\.tsx?$/,
@@ -57,7 +64,7 @@ module.exports = {
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
         type: 'asset/inline',
-      }
+      },
     ],
   },
   resolve: {
