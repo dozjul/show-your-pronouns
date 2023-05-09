@@ -1,8 +1,7 @@
-import {Language} from "./Language";
+// @ts-ignore
+import {Language,NoDataBecauseUserNotFound} from "@rye/pronouns-base";
 import {PronounsProvider} from "./PronounsProvider";
-import {NoDataBecauseUserNotFound} from "./Errors/UserNotFoundError";
-
-import "./style/preferredPronouns.scss"
+import "@rye/pronouns-styling";
 
 export abstract class PronounsUser{
     protected username: String;
