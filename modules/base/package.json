@@ -1,8 +1,9 @@
 {
     "name": "@rye/pronouns-base",
-    "version": "0.0.1",
-    "description": "Pronouns.Page JS API",
+    "version": "0.0.5",
+    "description": "absoulute basics for @rye/show-your-pronouns",
     "main": "dist/pronounsBase.js",
+    "types": "types/main.d.ts",
     "scripts": {
         "start": "node src/index.ts",
         "build": "webpack --mode production --config webpack.node.config.js",
